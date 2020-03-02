@@ -89,10 +89,10 @@ class Gparser():
     def estrutura_json(self,id_partida,info_kills):
         # Estruturando partidas para adicionar em um arquivo json
         id_game = 'game_'+str(id_partida)
-        total_kills = {'Total_Kills':info_kills[0]}
-        players_game = {'Players':self.players[id_partida][1]}
-        kills = {'kills':info_kills[1]}
-        dados_partida = [total_kills,players_game,kills]
+        total_kills = info_kills[0]
+        players_game = self.players[id_partida][1]
+        kills = info_kills[1]
+        dados_partida = {'Total_Kills':total_kills,'Players':players_game,'Kills':kills}
         
         self.dados_json[id_game] = dados_partida
         

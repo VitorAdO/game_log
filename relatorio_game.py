@@ -19,8 +19,8 @@ if os.path.exists(path_json):
         
         # Relatorio de cada partida
         for game in dados_json:
-            total_mortes = str(dados_json[game][0]['Total_Kills'])
-            kills = dados_json[game][2]['kills']
+            total_mortes = str(dados_json[game]['Total_Kills'])
+            kills = dados_json[game]['Kills']
             
             # Ordenando ranking de jogadores por partida
             ranking_game = sorted(kills.items(), key=lambda item: item[1], reverse=True)
