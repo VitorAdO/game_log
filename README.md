@@ -17,7 +17,7 @@ Projeto que irá realizar um parser do arquivo que gera todas as informações d
 
 # Overview scripts
 #  parser.py (TASK 1)
-	Gera arquivo JSON.
+	OBJETIVO: Gera arquivo JSON.
 		Importação do arquivo games.log;
 		Encontrar os indices de cada inicio de game;
 			O que marca o inicio de cada jogo é a palavra 'InitGame'.
@@ -29,13 +29,13 @@ Projeto que irá realizar um parser do arquivo que gera todas as informações d
 		Transformar a variavel em arquivo Json.
 
 # relatorio_game.py (TASK 2)
-	Imprimi relatório.
+	OBJETIVO: Imprimi relatório.
 		Importação do arquivo games_log.json;
 		Para cada partida é separado os valores que serão mostrados no relatório em uma variavel;
 		Montado a string com todos os dados do relatório;
 		Realização do print dessa string.
-# api.py
-	Rotas para puxar dados do JSON.
+# api.py (TASK 3)
+	OBJETIVO: Rotas para puxar dados do JSON.
 		Criação de função que importará os dados do json;
 		Iniciar flask
 		Criar rotas
